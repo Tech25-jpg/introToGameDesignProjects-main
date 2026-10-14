@@ -60,3 +60,6 @@ alarm[0] = flash_interval;
 
 // Restart when losing all lives.
 waiting_for_retry = false;
+
+// Background Music (Space Station) by drmseq (downloaded from Pixabay)
+puzzle_music_id = audio_play_sound(snd_background_music, 10, true);

@@ -41,6 +41,10 @@ if (instance_exists(obj_player)) {
 		if (obj_button_controller.current_round > obj_button_controller.max_rounds) {
 			global.puzzle_solved = true;
 			show_debug_message("All Rounds Completed! Well done!");
+			
+			// Stop Music
+			audio_stop_sound(snd_background_music);
+			
 			room_goto(rm_game_beat);
 	
 		} else {
@@ -59,6 +63,8 @@ if (instance_exists(obj_player)) {
 	if (obj_button_controller.player_health <= 0) {
 		obj_button_controller.is_game_over = true;
 		show_debug_message("Game Over. Player has perished.");
+		// So the music doesn't duplicate on restart.
+		audio_stop_sound(snd_background_music);
 	} else {
 		obj_button_controller.setup_round_sequence();
 		
