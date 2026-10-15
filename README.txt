@@ -5,13 +5,15 @@ Instructions:
 Arrow Keys to Move
 Press 'E' when prompted to interact with the buttons. If you press the wrong one during an order, you receive an electric shock. Health is only limited up to three attempts after touching three incorrect buttons during a playthrough you get a game over.
 
+The premise is simple, answer three rounds with button sequences correctly and you win!
+
 Assets pulled from The Spriters' Resource:
 // Button Sprites from WarioWare Touched!, sprites ripped by SHADEDBZ on the Spriters Resource!
 // Tesla Coils from Command & Conquer - Red Alert 2
 
 
 CHEAT CODE
-// Cheat Code - Guided Button Pressing by Pressing Enter
+// Cheat Code - Guided Button Sequence by Pressing Enter mid-game
 if (keyboard_check(vk_enter) && !cheat_is_playing) {
 	show_debug_message("=== CHEAT CODE ACTIVATED, STANDY BY: ===");
 	

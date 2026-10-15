@@ -31,8 +31,17 @@ if (is_game_over && keyboard_check_pressed(ord("R"))) {
 
 // If waiting for retry, check if player touched 'R':
 if (is_game_over) {
-	if keyboard_check_pressed(ord("R")) {
-	room_restart();
+	if (keyboard_check_pressed(ord("R")) && !restarting) {
+	restarting = true;
+	
+	sprite_index = spr_clock_rewind;
+	
+	audio_stop_sound(puzzle_music_id);
+	// Casette rewind sound from Pixabay, uploaded by Son_quotidient
+	
+	audio_play_sound(snd_casette_rewind, 5, false);
+	
+	alarm[2] = 45;
 	}
 }
 

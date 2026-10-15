@@ -4,6 +4,7 @@ is_game_over = false;
 player_health = 3;
 flash_alpha = 0;
 flash_triggered = false;
+restarting = false;
 
 rounds_completed = 0;
 current_round = 1;
