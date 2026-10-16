@@ -7,6 +7,8 @@ Press 'E' when prompted to interact with the buttons. If you press the wrong one
 
 The premise is simple, answer three rounds with button sequences correctly and you win!
 
+The project theme was implemented from the usage of direct rewind states and slight challenge. Supposedly, when you end up dying in a game, you'd revert back to the latest point before you messed up, this is similar except you go back to the beginning. Essentially, it's more of a return by death that lets you adapt without the constant needs of save states. Because you're also traveling backward in time, its the reason why the first sequence when the game boots up remains roughly the same. The power to try again and change your outcome with preexisting knowledge while racing against the clock was the game idea we thought of!
+
 Assets pulled from The Spriters' Resource:
 // Button Sprites from WarioWare Touched!, sprites ripped by SHADEDBZ on the Spriters Resource!
 // Tesla Coils from Command & Conquer - Red Alert 2
